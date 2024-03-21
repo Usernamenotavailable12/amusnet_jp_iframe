@@ -1,0 +1,276 @@
+<!doctype html>
+<html class="no-js">
+<style>
+.container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url('https://game-assets-tma1-prd.themill.tech/cdn-cgi/image/f=avif,f=auto/tm/amusnet/vampire-night-1920x1080');
+    padding: 20px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
+.container .number-box .wrapper {
+    padding: 6px 0px;
+    padding-left: 5px;
+    width: 100%;
+    text-align: right;
+}
+
+.container .number-slider {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.container .numbers {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 65px;
+    margin-top: -2px;
+}
+
+
+.numbers--box {
+    display: flex;
+    align-items: center;
+}
+
+
+.container .numbers__item {
+    width: 191px;
+    height: 29px;
+    display: flex;
+    color: #ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width: 1000px) {
+    .container .numbers {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container .numbers__item {
+    width: 151px;
+    height: 29px;
+    }
+}
+
+.numbers__item.numbers__item--jvari {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/306d2144-fafd-4459-862b-27f71b564ab5/jvari.png?auto=format%2Ccompress");margin-right: 36px;}
+.numbers__item.numbers__item--aguri {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/2dc827f6-f838-478c-ba48-51ba82bf8467/aguri.png?auto=format%2Ccompress")}
+.numbers__item.numbers__item--guli {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/a4f97f18-9e74-4bf1-82ca-ec96463932f0/guli.png?auto=format%2Ccompress");margin-right: 36px;}
+.numbers__item.numbers__item--yvavi {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/c6a4ef51-3d0a-4ece-b3e0-862408a76d3f/yvavi.png?auto=format%2Ccompress")}
+
+
+.container .numbers__item .numbers__item--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .number__item--img {
+    width: 90px;
+}
+
+.container .numbers__item-wrap {
+    padding: 0 12px 0 35px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.container .numbers .lari {
+    line-height: 27px;
+    font-family: PantonMtav3-Bold;
+    font-weight: normal;
+    padding-left: 6px;
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+.container .number-box {
+    overflow: hidden;
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.container .number-box .jack {
+    height: 27px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.jack>div {
+    display: inline-block;
+    margin-top: -54px;
+    font-size: 12px;
+}
+
+.jack>div>span {
+    display: block;
+    font-family: PantonMtav3-Bold;
+}
+
+.jack>div>span.dot {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.jack>div.go {
+    -ms-transform: translateY(-28px);
+    transform: translateY(-28px);
+}
+</style>
+    <div class="container">
+        <div class="numbers">
+            <div class="numbers--box">
+                <div class="numbers__item numbers__item--jvari">
+                    <div class="numbers__item-wrap">
+                        <div class="number-box">
+                            <div id="wrapp0" class="jack"></div>
+                        </div>
+                        <div class="lari">GEL</div>
+                    </div>
+                </div>
+                <div class="numbers__item numbers__item--aguri">
+                    <div class="numbers__item-wrap">
+                        <div class="number-box">
+                            <div id="wrapp1" class="jack"></div>
+                        </div>
+                        <div class="lari">GEL</div>
+                    </div>
+                </div>
+            </div>
+            <img src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/7e7e7e3a-d828-4822-9b1e-c50e2b1fb994/logo.png?auto=format%2Ccompress" width="90" height="auto">
+            <div class="numbers--box">
+                <div class="numbers__item numbers__item--guli">
+                    <div class="numbers__item-wrap">
+                        <div class="number-box">
+                            <div id="wrapp2" class="jack"></div>
+                        </div>
+                        <div class="lari">GEL</div>
+                    </div>
+                </div>
+                <div class="numbers__item numbers__item--yvavi">
+                    <div class="numbers__item-wrap">
+                        <div class="number-box">
+                            <div id="wrapp3" class="jack"></div>
+                        </div>
+                        <div class="lari">GEL</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const JSON_URI = 'https://stats.games.amusnet.io/jackpot_AmbassadoribetGE_GEL.json';
+let previousJackpots = [];
+
+syncJackpots();
+
+function syncJackpots() {
+    fetch(JSON_URI, { cache: 'no-cache' })
+    .then(res => res.json())
+    .then(data => {
+        // If previousJackpots is empty, initialize it with the values from the current JSON data
+        if (previousJackpots.length === 0) {
+            previousJackpots = [
+                parseInt(data.currentLevelIV.toString().replace('.', '')),
+                parseInt(data.currentLevelIII.toString().replace('.', '')),
+                parseInt(data.currentLevelII.toString().replace('.', '')),
+                parseInt(data.currentLevelI.toString().replace('.', ''))
+            ];
+        }
+
+        const currentJackpots = [
+            parseInt(data.currentLevelIV.toString().replace('.', '')),
+            parseInt(data.currentLevelIII.toString().replace('.', '')),
+            parseInt(data.currentLevelII.toString().replace('.', '')),
+            parseInt(data.currentLevelI.toString().replace('.', ''))
+        ];
+
+        // Calculate the difference between the current and previous values
+        const diffs = currentJackpots.map((jackpot, index) => jackpot - previousJackpots[index]);
+
+        const wrap = [];
+        const domArr = [];
+
+        currentJackpots.forEach((jackpot, index) => {
+            // If the difference is negative, it means the value has decreased, so we use the current jackpot as previous
+            if (diffs[index] < 0) {
+                previousJackpots[index] = jackpot;
+            }
+
+            // Create DOM elements and update them based on the difference
+            createInitialDomElements(wrap, domArr, previousJackpots[index], index, diffs[index]);
+        });
+
+        // Update previousJackpots to currentJackpots for the next iteration
+        previousJackpots = currentJackpots.slice();
+    });
+}
+
+function createInitialDomElements(wrap, domArr, jackpot, index, diff) {
+    wrap[index] = document.getElementById('wrapp' + index);
+    wrap[index].innerHTML = '';
+    domArr[index] = [];
+
+    jackpot.toString().split('').forEach((number, numIndex) => {
+        const numDom = document.createElement('div');
+        numDom.innerHTML = parseInt(number);
+        wrap[index].appendChild(numDom);
+        domArr[index].push(numDom);
+    
+        // Separator
+        if (((jackpot.toString().length - 3) - numIndex) % 3 == 0) {
+            const numDomSeparator = document.createElement('div');
+            const separator = jackpot.toString().length - 3 == numIndex ? '.' : ',';
+            for(var i = 0; i < 3; i ++) {
+                const a = document.createElement('div');
+                a.innerHTML = separator;
+                numDomSeparator.appendChild(a);
+            }
+            wrap[index].appendChild(numDomSeparator);
+        }
+    });
+
+    // If the difference is positive, update the displayed numbers based on the difference
+    if (diff > 0) {
+        const interval = setInterval(() => {
+            iterateAndUpdateJackpot(jackpot, index, wrap, domArr);
+        }, 60000 / diff); // Adjust the interval based on the difference
+        // Store the interval for later clearing
+        intervals.push(interval);
+    }
+}
+
+function iterateAndUpdateJackpot(jackpot, index, wrap, domArr) {
+    // Increase the jackpot value
+    jackpot++;
+    
+    // Update the DOM elements accordingly
+    domArr[index].forEach((numDom, numIndex) => {
+        numDom.innerHTML = parseInt(jackpot.toString()[numIndex]);
+    });
+}
+    </script>
+</html>
