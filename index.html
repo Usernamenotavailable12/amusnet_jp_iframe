@@ -208,24 +208,24 @@ function syncJackpots() {
 
         if (previousJackpots.length === 0) {
             previousJackpots = [
-                parseInt(data.currentLevelIV.toString().replace('.', '')),
-                parseInt(data.currentLevelIII.toString().replace('.', '')),
+                parseInt(data.currentLevelI.toString().replace('.', '')),
                 parseInt(data.currentLevelII.toString().replace('.', '')),
-                parseInt(data.currentLevelI.toString().replace('.', ''))
+                parseInt(data.currentLevelIII.toString().replace('.', '')),
+                parseInt(data.currentLevelIV.toString().replace('.', ''))
             ];
         } else {
             // Update previousJackpots with the latest data
-            previousJackpots[0] = parseInt(data.currentLevelIV.toString().replace('.', ''));
-            previousJackpots[1] = parseInt(data.currentLevelIII.toString().replace('.', ''));
-            previousJackpots[2] = parseInt(data.currentLevelII.toString().replace('.', ''));
-            previousJackpots[3] = parseInt(data.currentLevelI.toString().replace('.', ''));
+            previousJackpots[0] = parseInt(data.currentLevelI.toString().replace('.', ''));
+            previousJackpots[1] = parseInt(data.currentLevelII.toString().replace('.', ''));
+            previousJackpots[2] = parseInt(data.currentLevelIII.toString().replace('.', ''));
+            previousJackpots[3] = parseInt(data.currentLevelIV.toString().replace('.', ''));
         }
 
         const currentJackpots = [
-            parseInt(data.currentLevelIV.toString().replace('.', '')),
-            parseInt(data.currentLevelIII.toString().replace('.', '')),
+            parseInt(data.currentLevelI.toString().replace('.', '')),
             parseInt(data.currentLevelII.toString().replace('.', '')),
-            parseInt(data.currentLevelI.toString().replace('.', ''))
+            parseInt(data.currentLevelIII.toString().replace('.', '')),
+            parseInt(data.currentLevelIV.toString().replace('.', ''))
         ];
         
         const diffs = currentJackpots.map((jackpot, index) => jackpot - previousJackpots[index]);
