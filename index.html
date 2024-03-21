@@ -6,13 +6,14 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    background: url('https://game-assets-tma1-prd.themill.tech/cdn-cgi/image/f=avif,f=auto/tm/amusnet/vampire-night-1920x1080');
+    background: radial-gradient(#700564,#1f051c);
     padding: 20px;
-    border-radius: 20px;
+    border-radius:5px;
     background-size: cover;
     margin-left: 2rem;
     margin-right: 2rem;
 }
+/* background-image: url('https://game-assets-tma1-prd.themill.tech/cdn-cgi/image/f=avif,f=auto/tm/amusnet/vampire-night-1920x1080'); */
 
 .container * {
     box-sizing: border-box;
@@ -52,27 +53,13 @@
 
 
 .container .numbers__item {
-    width: 191px;
-    height: 29px;
+    width: 220px;
+    height: 39px;
     display: flex;
     color: #ffffff;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-}
-@media (max-width: 1200px) {
-    .container .numbers {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .container .numbers__item {
-    width: 151px;
-    height: 29px;
-    }
-    .container {
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
 }
 
 .numbers__item.numbers__item--jvari {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/306d2144-fafd-4459-862b-27f71b564ab5/jvari.png?auto=format%2Ccompress");margin-right: 36px;}
@@ -127,7 +114,7 @@
 .jack>div {
     display: inline-block;
     margin-top: -54px;
-    font-size: 12px;
+    font-size: 17px;
 }
 
 .jack>div>span {
@@ -143,6 +130,36 @@
 .jack>div.go {
     -ms-transform: translateY(-28px);
     transform: translateY(-28px);
+}
+@media (max-width: 1200px) {
+    .container .numbers {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container .numbers__item {
+    width: 151px;
+    height: 29px;
+    }
+    .container {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .jack>div {
+    font-size: 12px;
+}
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .container .numbers {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .container .numbers__item {
+    width: 191px;
+    height: 35px;
+    }
+    .jack>div {
+    font-size: 12px;
+}
 }
 </style>
     <div class="container">
