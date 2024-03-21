@@ -182,7 +182,7 @@
         </div>
     </div>
     <script>
-const TIME_INTERVAL = 60;
+const TIME_INTERVAL = 1;
 const JSON_URI = 'https://stats.games.amusnet.io/jackpot_AmbassadoribetGE_GEL.json';
 let intervals = [];
 let previousJackpots = [];
@@ -263,28 +263,5 @@ function createInitialDomElements(wrap, domArr, jackpot, index) {
         }
     });
 }
-
-function iterateAndUpdateJackpot(jackpots, index, wrap, domArr) {
-    jackpots[index]++;
-    const jackpot = jackpots[index];
-
-    const jackLength = jackpot.toString().length;
-    if (wrap[index].children.length != jackLength + Math.floor(jackLength / 3)) {
-        createInitialDomElements(wrap, domArr, jackpot, index);
-        return;
-    }
-
-    const el = domArr[index][domArr[index].length - 1];
-    el.innerHTML = (parseInt(el.innerHTML) + 1) % 10;
-
-    let div = 1;
-    for (let i = domArr[index].length - 2; i >= 0; i--) {
-        div *= 10;
-        if (jackpot % div == 0) {
-            domArr[index][i].innerHTML = (parseInt(domArr[index][i].innerHTML) + 1) % 10;
-        }
-    }
-}
-
     </script>
 </html>
