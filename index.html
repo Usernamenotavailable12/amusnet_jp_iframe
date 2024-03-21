@@ -131,13 +131,19 @@
     -ms-transform: translateY(-28px);
     transform: translateY(-28px);
 }
+.jackpot-logo-amb-mob {
+    display: none;
+}
+.jackpot-logo-amb-desk {
+    display: block;
+}
 @media (max-width: 1200px) {
     .container .numbers {
         flex-direction: column;
         gap: 10px;
     }
     .container .numbers__item {
-    width: 151px;
+    width: 161px;
     height: 29px;
     }
     .container {
@@ -146,6 +152,12 @@
     }
     .jack>div {
     font-size: 12px;
+}
+.jackpot-logo-amb-desk {
+    display: none;
+}
+.jackpot-logo-amb-mob {
+    display: block;
 }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -161,14 +173,10 @@
     font-size: 12px;
 }
 }
-@media (max-width: 768px) {
-    .container {
-    background-image: url('https://game-assets-tma1-prd.themill.tech/cdn-cgi/image/f=avif,f=auto/tm/amusnet/vampire-night-1920x1080');
-}
-}
 </style>
     <div class="container">
         <div class="numbers">
+            <img class="jackpot-logo-amb-mob" src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/7e7e7e3a-d828-4822-9b1e-c50e2b1fb994/logo.png?auto=format%2Ccompress" width="90" height="auto">
             <div class="numbers--box">
                 <div class="numbers__item numbers__item--jvari">
                     <div class="numbers__item-wrap">
@@ -187,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <img src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/7e7e7e3a-d828-4822-9b1e-c50e2b1fb994/logo.png?auto=format%2Ccompress" width="90" height="auto">
+            <img class="jackpot-logo-amb-desk" src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/7e7e7e3a-d828-4822-9b1e-c50e2b1fb994/logo.png?auto=format%2Ccompress" width="90" height="auto">
             <div class="numbers--box">
                 <div class="numbers__item numbers__item--guli">
                     <div class="numbers__item-wrap">
