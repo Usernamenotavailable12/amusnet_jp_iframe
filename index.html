@@ -6,12 +6,14 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    background: #1f051c;
+    background: rgb(0,0,0,0);
     padding: 20px;
     border-radius:5px;
     background-size: cover;
     margin-left: 0rem;
     margin-right: 0rem;
+    font-family: Noto Serif Georgian;
+    font-weight: bold;
 }
 /* background-image: url('https://game-assets-tma1-prd.themill.tech/cdn-cgi/image/f=avif,f=auto/tm/amusnet/vampire-night-1920x1080'); */
 
@@ -53,7 +55,7 @@
 
 
 .container .numbers__item {
-    width: 240px;
+    width: 150px;
     height: 39px;
     display: flex;
     color: #ffffff;
@@ -62,10 +64,10 @@
     background-position: center;
 }
 
-.numbers__item.numbers__item--jvari {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/306d2144-fafd-4459-862b-27f71b564ab5/jvari.png?auto=format%2Ccompress");margin-right: 36px;}
-.numbers__item.numbers__item--aguri {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/2dc827f6-f838-478c-ba48-51ba82bf8467/aguri.png?auto=format%2Ccompress")}
-.numbers__item.numbers__item--guli {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/a4f97f18-9e74-4bf1-82ca-ec96463932f0/guli.png?auto=format%2Ccompress");margin-right: 36px;}
-.numbers__item.numbers__item--yvavi {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/c6a4ef51-3d0a-4ece-b3e0-862408a76d3f/yvavi.png?auto=format%2Ccompress")}
+.numbers__item.numbers__item--jvari {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/726064ac-9c27-475e-a497-ebc79b796146/jvari-1.png?auto=format%2Ccompress");margin-right: 36px;}
+.numbers__item.numbers__item--aguri {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/e5992a62-67f7-4ebd-84e9-0a2ffcb9c670/aguri-1.png?auto=format%2Ccompress")}
+.numbers__item.numbers__item--guli {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/906a83f1-f8ec-4db0-af2a-3ea55ef000ff/guli-1.png?auto=format%2Ccompress");margin-right: 36px;}
+.numbers__item.numbers__item--yvavi {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/630d3225-b15a-402c-8dbe-cf76ced59dc1/yvavi-1.png?auto=format%2Ccompress")}
 
 
 .container .numbers__item .numbers__item--icon {
@@ -79,7 +81,7 @@
 }
 
 .container .numbers__item-wrap {
-    padding: 0 12px 0 35px;
+    padding: 0 14px 0 45px;
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -89,10 +91,10 @@
 
 .container .numbers .lari {
     line-height: 27px;
-    font-family: PantonMtav3-Bold;
-    font-weight: normal;
+    font-family: 'Noto Sans';
+    font-weight: bold;
     padding-left: 6px;
-    font-size: 12px;
+    font-size: 11px;
     padding-top: 2px;
 }
 
@@ -114,12 +116,13 @@
 .jack>div {
     display: inline-block;
     margin-top: -54px;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .jack>div>span {
     display: block;
-    font-family: PantonMtav3-Bold;
+    font-family: 'Noto Sans';
+    font-weight: bold;
 }
 
 .jack>div>span.dot {
@@ -143,7 +146,7 @@
         gap: 10px;
     }
     .container .numbers__item {
-    width: 161px;
+    width: 111px;
     height: 29px;
     }
     .container {
@@ -151,13 +154,19 @@
         margin-right: 0rem;
     }
     .jack>div {
-    font-size: 12px;
+    font-size: 9px;
 }
 .jackpot-logo-amb-desk {
     display: none;
 }
 .jackpot-logo-amb-mob {
     display: block;
+}
+.container .numbers__item-wrap {
+    padding: 0 14px 0 32.5px;
+}
+.container .numbers .lari {
+    font-size: 10px;
 }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -166,7 +175,7 @@
         gap: 10px;
     }
     .container .numbers__item {
-    width: 191px;
+    width: 141px;
     height: 35px;
     }
     .jack>div {
@@ -176,14 +185,14 @@
 </style>
     <div class="container">
         <div class="numbers">
-            <img class="jackpot-logo-amb-mob" src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/7e7e7e3a-d828-4822-9b1e-c50e2b1fb994/logo.png?auto=format%2Ccompress" width="90" height="auto">
+            <img class="jackpot-logo-amb-mob" src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/a64c278c-464f-4a81-8803-96b897069870/jp-logo-1.png?auto=format%2Ccompress" width="170" height="auto">
             <div class="numbers--box">
                 <div class="numbers__item numbers__item--jvari">
                     <div class="numbers__item-wrap">
                         <div class="number-box">
                             <div id="wrapp0" class="jack"></div>
                         </div>
-                        <div class="lari">GEL</div>
+                        <div class="lari">₾</div>
                     </div>
                 </div>
                 <div class="numbers__item numbers__item--aguri">
@@ -191,18 +200,18 @@
                         <div class="number-box">
                             <div id="wrapp1" class="jack"></div>
                         </div>
-                        <div class="lari">GEL</div>
+                        <div class="lari">₾</div>
                     </div>
                 </div>
             </div>
-            <img class="jackpot-logo-amb-desk" src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/7e7e7e3a-d828-4822-9b1e-c50e2b1fb994/logo.png?auto=format%2Ccompress" width="90" height="auto">
+            <img class="jackpot-logo-amb-desk" src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/a64c278c-464f-4a81-8803-96b897069870/jp-logo-1.png?auto=format%2Ccompress" width="170" height="auto">
             <div class="numbers--box">
                 <div class="numbers__item numbers__item--guli">
                     <div class="numbers__item-wrap">
                         <div class="number-box">
                             <div id="wrapp2" class="jack"></div>
                         </div>
-                        <div class="lari">GEL</div>
+                        <div class="lari">₾</div>
                     </div>
                 </div>
                 <div class="numbers__item numbers__item--yvavi">
@@ -210,7 +219,7 @@
                         <div class="number-box">
                             <div id="wrapp3" class="jack"></div>
                         </div>
-                        <div class="lari">GEL</div>
+                        <div class="lari">₾</div>
                     </div>
                 </div>
             </div>
